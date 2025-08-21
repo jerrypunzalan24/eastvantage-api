@@ -1,0 +1,52 @@
+[main.py:21 -                index() ] Accessed the welcome route
+[main.py:28 -          all_address() ] Fetching all address books with skip=0 and limit=10
+[main.py:28 -          all_address() ] Fetching all address books with skip=0 and limit=10
+[main.py:115 -       create_address() ] Geocoding address for person: name='John doe' email='example@email.com' phone='09123456789' address=AddressBookCreate(city='Quezon City', country='Philippines', street='Narra street', postal='12345') address: city='Quezon City' country='Philippines' street='Narra street' postal='12345'
+[client.py:194 -             __init__() ] API queries_quota: 60
+[services.py:16 -      geocode_address() ] Geocoding address: Narra street, Quezon City, 12345, Philippines
+[main.py:125 -       create_address() ] Geocoded address to latitude: 14.6324634, longitude: 121.0668434
+[main.py:115 -       create_address() ] Geocoding address for person: name='gold ship' email='goldship_uma@email.com' phone='09123412341' address=AddressBookCreate(city='Antipolo City', country='Philippines', street='Road 25', postal='') address: city='Antipolo City' country='Philippines' street='Road 25' postal=''
+[client.py:194 -             __init__() ] API queries_quota: 60
+[services.py:16 -      geocode_address() ] Geocoding address: Road 25, Antipolo City, , Philippines
+[main.py:125 -       create_address() ] Geocoded address to latitude: 14.6238773, longitude: 121.1702206
+[main.py:115 -       create_address() ] Geocoding address for person: name='haru urara' email='haruurara_uma@email.com' phone='09123412332' address=AddressBookCreate(city='Antipolo City', country='Philippines', street='Gate 2', postal='') address: city='Antipolo City' country='Philippines' street='Gate 2' postal=''
+[client.py:194 -             __init__() ] API queries_quota: 60
+[services.py:16 -      geocode_address() ] Geocoding address: Gate 2, Antipolo City, , Philippines
+[main.py:125 -       create_address() ] Geocoded address to latitude: 14.6220203, longitude: 121.1766055
+[main.py:28 -          all_address() ] Fetching all address books with skip=0 and limit=10
+[main.py:73 - get_nearby_addresses() ] Fetching addresses within 1.1 km of (14.6238773, 121.1702206)
+[services.py:28 -            haversine() ] Calculating distance between (AddressBook.latitude, AddressBook.longitude) and (14.6238773, 121.1702206
+[main.py:90 - get_nearby_addresses() ] Found 2 nearby addresses
+[main.py:73 - get_nearby_addresses() ] Fetching addresses within 0.5 km of (14.6238773, 121.1702206)
+[services.py:28 -            haversine() ] Calculating distance between (AddressBook.latitude, AddressBook.longitude) and (14.6238773, 121.1702206
+[main.py:90 - get_nearby_addresses() ] Found 1 nearby addresses
+[main.py:73 - get_nearby_addresses() ] Fetching addresses within 15.0 km of (14.6238773, 121.1702206)
+[services.py:28 -            haversine() ] Calculating distance between (AddressBook.latitude, AddressBook.longitude) and (14.6238773, 121.1702206
+[main.py:90 - get_nearby_addresses() ] Found 3 nearby addresses
+[address.py:107 -       create_address() ] Geocoding address for person: name='John doe' email='example@email.com' phone='09123456789' address=AddressBookCreate(city='Quezon City', country='Philippines', street='Narra street', postal='12345') address: city='Quezon City' country='Philippines' street='Narra street' postal='12345'
+[client.py:194 -             __init__() ] API queries_quota: 60
+[services.py:16 -      geocode_address() ] Geocoding address: Narra street, Quezon City, 12345, Philippines
+[address.py:117 -       create_address() ] Geocoded address to latitude: 14.6324634, longitude: 121.0668434
+[address.py:145 -       create_address() ] Person already exist (sqlite3.IntegrityError) UNIQUE constraint failed: person.email
+[SQL: INSERT INTO person (name, email, phone, created_at, updated_at) VALUES (?, ?, ?, ?, ?)]
+[parameters: ('John doe', 'example@email.com', '09123456789', '2025-08-16 08:19:01.331506', '2025-08-16 08:19:01.331511')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+[address.py:20 -          all_address() ] Fetching all address books with skip=0 and limit=10
+[address.py:19 -          all_address() ] Fetching all address books with skip=0 and limit=10
+[address.py:37 -    get_address_by_id() ] Fetching address for person_id: 1
+[address.py:40 -    get_address_by_id() ] Fetched address book: <class 'float'> <class 'float'>
+[address.py:49 -    get_address_by_id() ] Fetched address book for person_id 1: <models.Person object at 0x000000000792FE00>
+[address.py:37 -    get_address_by_id() ] Fetching address for person_id: 1
+[address.py:40 -    get_address_by_id() ] Fetched address book: <class 'float'> <class 'float'>
+[address.py:49 -    get_address_by_id() ] Fetched address book for person_id 1: <models.Person object at 0x0000000007D08690>
+[address.py:19 -          all_address() ] Fetching all address books with skip=0 and limit=10
+[address.py:253 -       delete_address() ] Deleting address for person_id: 1
+[address.py:19 -          all_address() ] Fetching all address books with skip=0 and limit=10
+[address.py:106 -       create_address() ] Geocoding address for person: name='raiden shogun' email='raiden@email.com' phone='09123456789' address=AddressBookCreate(city='Quezon City', country='Philippines', street='Narra street', postal='12345') address: city='Quezon City' country='Philippines' street='Narra street' postal='12345'
+[client.py:194 -             __init__() ] API queries_quota: 60
+[services.py:16 -      geocode_address() ] Geocoding address: Narra street, Quezon City, 12345, Philippines
+[address.py:116 -       create_address() ] Geocoded address to latitude: 14.6324634, longitude: 121.0668434
+[address.py:24 -          all_address() ] Cache miss for skip=0, limit=10
+[address.py:25 -          all_address() ] Fetching all address books with skip=0 and limit=10
+[address.py:24 -          all_address() ] Cache miss for skip=0, limit=10
+[address.py:25 -          all_address() ] Fetching all address books with skip=0 and limit=10

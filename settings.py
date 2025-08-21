@@ -17,31 +17,7 @@ class AppSettings:
     APP_VERSION: str = "1.0.0"
     APP_METADATA: list = [
         {
-            "name": "all_address",
-            "description": "Get all address books with pagination",
-        },
-        {
-            "name": "get_address_by_id",
-            "description": "Get address by person ID",
-        },
-        {
-            "name": "nearby",
-            "description": "Get nearby addresses based on latitude and longitude and distance",
-        },
-        {
-            "name": "index",
-            "description": "Welcome route for the API",
-        },
-        {
-            "name": "create_address",
-            "description": "Create a new address with personal details",
-        },
-        {
-            "name": "update_address",
-            "description": "Update address by person ID",
-        },
-        {
-            "name": "delete_address",
-            "description": "Delete address by person ID",
+            "name": "Address Book Group",
+            "description": "Address book management",
         }
     ]
